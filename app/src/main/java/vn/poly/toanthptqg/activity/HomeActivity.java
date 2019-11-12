@@ -1,19 +1,17 @@
-package vn.poly.toanthptqg;
+package vn.poly.toanthptqg.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import vn.poly.toanthptqg.R;
+
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //test github
-        //test github1
-        //aaa
-        // edit from github
-         // edit from github1
+
     }
 }
