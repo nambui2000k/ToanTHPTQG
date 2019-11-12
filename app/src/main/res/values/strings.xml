@@ -2,4 +2,15 @@
     <string name="app_name">ToanTHPTQG</string>
     <string name="text_login_google">Sign in with Google</string>
     <string name="text_login_facebook">Sign in with Facebook</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_test_day">Ngày thi</string>
+    <string name="title_do_exam">Luyện thi</string>
+    <string name="title_school">Trường học</string>
+    <string name="title_news">Tin tức</string>
+    <string name="title_account">Tài khoản</string>
+    <string name="list_exam">Danh sách đề thi</string>
+    <string name="list_school">Danh sách trường học</string>
 </resources>
