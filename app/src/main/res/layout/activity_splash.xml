@@ -9,7 +9,7 @@
     tools:context=".activity.SplashActivity">
     <ImageView
         android:layout_margin="80dp"
-        android:src="@drawable/ic_logo"
+        app:srcCompat="@drawable/ic_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
