@@ -6,4 +6,6 @@
     <color name="colorFacebookButton">#3B5998</color>
     <color name="colorGoogleButton">#FF3333</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="civ_border_color">#2D867C7C</color>
 </resources>

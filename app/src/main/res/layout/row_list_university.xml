@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="64dp">
+    <RelativeLayout
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/civ_border_color"
+            android:id="@+id/logoUniversity"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:id="@+id/lnlContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/logoUniversity"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameUniversity"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="4dp"
+                android:text="Đại học Bách khoa Hà Nội"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:srcCompat="@drawable/ic_id_school" />
+
+                <TextView
+                    android:id="@+id/tvIdUniversity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="BKA" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginRight="8dp"
+        android:gravity="right"
+        android:layout_toRightOf="@id/lnlContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgLocation"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_location"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/imgScore"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_score"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
