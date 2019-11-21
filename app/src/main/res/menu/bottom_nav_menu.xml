@@ -13,7 +13,7 @@
 
     <item
         android:id="@+id/navigation_school"
-        android:icon="@drawable/ic_school"
+        android:icon="@drawable/ic_school_nav"
         android:title="@string/title_school" />
     <item
         android:id="@+id/navigation_news"

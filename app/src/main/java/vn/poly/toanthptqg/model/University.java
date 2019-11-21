@@ -8,6 +8,9 @@ public class University {
     private String linkScore;
     private String linkLogo;
 
+    public University() {
+    }
+
     public University(String idUniversity, String nameUniversity, float longitude, float latitude, String linkScore, String linkLogo) {
         this.idUniversity = idUniversity;
         this.nameUniversity = nameUniversity;

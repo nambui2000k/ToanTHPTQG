@@ -1,19 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_account"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="4dp"
+                android:layout_centerVertical="true"
+                app:civ_border_width="1dp"
+                android:src="@drawable/boboiboy"
+                app:civ_border_color="@color/colorBlack"
+                android:id="@+id/logoUniversity"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="Bùi Đức Nam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        app:srcCompat="@drawable/ic_email"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="nambui2000k@gmail.com"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        app:srcCompat="@drawable/ic_phone"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="0977848350"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        app:srcCompat="@drawable/ic_address"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Ha Noi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="bottom|center"
+                android:background="@drawable/bgr_button_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    app:srcCompat="@drawable/ic_log_out"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+                <TextView
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="24dp"
+                    android:text="@string/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:elevation="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/bgr_account"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="Đề đã làm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="24dp"
+                android:text="52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="Đề chưa làm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="150"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

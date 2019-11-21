@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TrueScoreActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorAccent"
+        android:id="@+id/toolbarTrueScore"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="24sp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_gravity="center_vertical"
+            android:id="@+id/spnYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+     <WebView
+    android:id="@+id/wc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tvNotHaveScore"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Hiện tại điểm chuẩn trường gif ddos chua dc cong bo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</LinearLayout>

@@ -18,6 +18,7 @@ public class UniversityHolder extends RecyclerView.ViewHolder {
 
 
 
+
     public UniversityHolder(@NonNull View itemView) {
         super(itemView);
         tvNameUniversity=itemView.findViewById(R.id.tvNameUniversity);

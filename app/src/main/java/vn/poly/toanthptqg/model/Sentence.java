@@ -1,22 +1,17 @@
 package vn.poly.toanthptqg.model;
 
 public class Sentence {
-    private int idSentence;
+
     private String content;
     private String author;
 
-    public Sentence(int idSentence, String content, String author) {
-        this.idSentence = idSentence;
+    public Sentence( String content, String author) {
+
         this.content = content;
         this.author = author;
     }
 
-    public int getIdSentence() {
-        return idSentence;
-    }
-
-    public void setIdSentence(int idSentence) {
-        this.idSentence = idSentence;
+    public Sentence() {
     }
 
     public String getContent() {

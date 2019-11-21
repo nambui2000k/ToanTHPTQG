@@ -7,5 +7,8 @@
     <color name="colorGoogleButton">#FF3333</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
-    <color name="civ_border_color">#2D867C7C</color>
+    <color name="colorCivBorder">#2D867C7C</color>
+    <color name="colorBolderAccount">#B4B4B4</color>
+    <color name="colorGreen">#00FF68</color>
+    <color name="colorYellow">#C9C92B</color>
 </resources>

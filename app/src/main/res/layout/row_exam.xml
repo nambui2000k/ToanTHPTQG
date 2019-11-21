@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="104dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            app:srcCompat="@drawable/ic_exam"
+            android:layout_width="72dp"
+            android:layout_height="72dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvNameExam"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp"
+                    android:text="De khao sat chat luong dau nam"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp">
+                <ImageView
+                    app:srcCompat="@drawable/ic_school"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+                <TextView
+                    android:id="@+id/tvNameSchool"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="14dp"
+                    android:text=": THPT Le Van Thinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp">
+                <ImageView
+                    app:srcCompat="@drawable/ic_year"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+                <TextView
+                    android:id="@+id/tvYear"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="14dp"
+                    android:text=": 2019-2020"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="24dp">
+                <TextView
+                    android:text="@string/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorGreen"
+                    android:text="Đã làm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="bottom"
+        android:src="@drawable/line_bottom_row_university"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</androidx.cardview.widget.CardView>
