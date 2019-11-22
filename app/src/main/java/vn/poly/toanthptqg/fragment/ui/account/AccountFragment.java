@@ -20,6 +20,8 @@ public class AccountFragment extends BaseFragment {
         return setViewFragment(R.layout.fragment_account,container,inflater);
     }
 
+
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
