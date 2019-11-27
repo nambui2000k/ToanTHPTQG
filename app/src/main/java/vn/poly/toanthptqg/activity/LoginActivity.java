@@ -175,7 +175,7 @@ public class LoginActivity extends BaseActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("FACEBOOKLOG", "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            saveInforLogin(user.getDisplayName(),user.getEmail(),user.getPhoneNumber(),user.getPhotoUrl()+"",user.getIdToken(true)+"");
+                            saveInforLogin(user.getDisplayName(),user.getEmail(),user.getPhoneNumber(),user.getPhotoUrl()+"?height=500",user.getIdToken(true)+"");
                             updateUI();
                         } else {
                             // If sign in fails, display a message to the user.
