@@ -20,12 +20,13 @@
                 app:civ_border_width="1dp"
                 android:src="@drawable/boboiboy"
                 app:civ_border_color="@color/colorBlack"
-                android:id="@+id/logoUniversity"
+                android:id="@+id/imageAvatar"
                 android:layout_width="120dp"
                 android:layout_height="120dp">
 
             </de.hdodenhof.circleimageview.CircleImageView>
             <TextView
+                android:id="@+id/tvNameDisplay"
                 android:layout_marginTop="4dp"
                 android:gravity="center"
                 android:textColor="@color/colorWhite"
@@ -56,6 +57,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"/>
                     <TextView
+                        android:id="@+id/tvEmail"
                         android:layout_marginLeft="16dp"
                         android:layout_gravity="center_vertical"
                         android:text="nambui2000k@gmail.com"
@@ -74,6 +76,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"/>
                     <TextView
+                        android:id="@+id/tvPhoneNumber"
                         android:layout_marginLeft="16dp"
                         android:layout_gravity="center_vertical"
                         android:text="0977848350"
@@ -83,6 +86,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:visibility="gone"
                     android:layout_margin="8dp"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -103,12 +107,13 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/lnlLogout"
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:gravity="center"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="24dp"
                 android:layout_gravity="bottom|center"
                 android:background="@drawable/bgr_button_logout"
                 android:layout_width="wrap_content"

@@ -1,5 +1,8 @@
 package vn.poly.toanthptqg.fragment.ui.school;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -20,6 +23,10 @@ import androidx.core.view.MenuItemCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.firebase.ui.auth.AuthUI;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -32,6 +39,7 @@ import java.util.List;
 
 import vn.poly.toanthptqg.R;
 import vn.poly.toanthptqg.activity.BaseFragment;
+import vn.poly.toanthptqg.activity.LoginActivity;
 import vn.poly.toanthptqg.adapter.UniversityAdapter;
 import vn.poly.toanthptqg.model.University;
 
@@ -113,6 +121,8 @@ public class SchoolFragment extends BaseFragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.menu, menu);
         MenuItem searchItem = menu.findItem(R.id.search);
+        MenuItem shareItem = menu.findItem(R.id.share);
+        shareItem.setVisible(false);
         searchView= (SearchView) MenuItemCompat.getActionView(searchItem);
         searchView.setQueryHint(getString(R.string.search));
         searchView.setIconifiedByDefault(true);
@@ -139,7 +149,7 @@ public class SchoolFragment extends BaseFragment {
                 Toast.makeText(getActivity(), "Share School", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.logout:
-                Toast.makeText(getActivity(), "Logout School", Toast.LENGTH_LONG).show();
+                logOut();
                 break;
             case R.id.exit:
                 Toast.makeText(getActivity(), "Exit School", Toast.LENGTH_LONG).show();
@@ -202,5 +212,30 @@ public class SchoolFragment extends BaseFragment {
 
             }
         });
+    }
+    public void logOut() {
+        AuthUI.getInstance().signOut(getActivity()).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                clearInforLogin();
+                Intent intent=new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+
+
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+                Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+
+            }
+        });
+    }
+    private void clearInforLogin(){
+        SharedPreferences sharedPreferences= getActivity().getSharedPreferences(getActivity().getResources().getString(R.string.key_save_inforLogin), Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.clear();
+        editor.apply();
     }
 }

@@ -12,7 +12,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import vn.poly.toanthptqg.R;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends BaseActivity {
     private int positionSelectNav=0;
 
     @Override

@@ -44,5 +44,15 @@
     <string name="c">C</string>
     <string name="d">D</string>
     <string name="title_activity_maps">Map</string>
+    <string name="key_save_inforLogin">informationLogin</string>
+    <string name="token">token</string>
+    <string name="no_token">noToken</string>
+    <string name="name_display">nameDisplay</string>
+    <string name="email">email</string>
+    <string name="phone">phone</string>
+    <string name="url_avatar">urlAvatar</string>
+    <string name="facebook_application_id" translatable="false">550228805548591</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb550228805548591</string>
+
 
 </resources>
