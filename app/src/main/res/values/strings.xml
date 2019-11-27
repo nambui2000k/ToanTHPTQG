@@ -53,6 +53,9 @@
     <string name="url_avatar">urlAvatar</string>
     <string name="facebook_application_id" translatable="false">550228805548591</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fb550228805548591</string>
+    <string name="facebook_app_id">550228805548591</string>
+    <string name="fb_login_protocol_scheme">fb550228805548591</string>
+
 
 
 </resources>
