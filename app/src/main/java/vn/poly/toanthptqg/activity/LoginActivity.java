@@ -69,6 +69,8 @@ public class LoginActivity extends BaseActivity {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 saveInforLogin(user.getDisplayName(),user.getEmail(),user.getPhoneNumber(),user.getPhotoUrl()+"",user.getIdToken(true)+"");
                 openActivy(HomeActivity.class);
+            } else {
+                Toast.makeText(this,"Lỗi",Toast.LENGTH_LONG).show();
             }
         }
     }
