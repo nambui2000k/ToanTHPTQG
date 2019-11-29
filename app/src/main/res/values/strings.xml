@@ -55,7 +55,10 @@
     <string name="facebook_login_protocol_scheme" translatable="false">fb550228805548591</string>
     <string name="facebook_app_id">550228805548591</string>
     <string name="fb_login_protocol_scheme">fb550228805548591</string>
-
+    <string name="sentence">Câu</string>
+    <string name="score">Điểm</string>
+    <string name="title_list_question_did">Danh sách câu hỏi</string>
+    <string name="answer_is">Đáp án là:</string>
 
 
 </resources>

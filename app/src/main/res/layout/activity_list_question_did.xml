@@ -1,55 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.ListQuestionDidActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarListQuestionDid"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorAccent" />
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl1"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="1"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion1"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult1"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl2"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -58,1631 +71,1896 @@
                     android:layout_marginLeft="16dp"
                     android:text="2"
                     android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion2"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult2"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl3"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="3"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="3"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion3"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult3"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl4"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="4"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="4"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion4"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult4"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl5"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="5"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="5"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion5"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult5"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_question"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl6"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="6"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="6"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion6"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult6"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl7"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="7"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="7"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion7"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult7"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl8"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="8"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="8"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion8"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult8"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_false"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl9"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="9"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="9"
+                    android:textSize="24dp" />
 
                 <TextView
                     android:id="@+id/tvQuestion9"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult9"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl10"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="10"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="10"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion10"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult10"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl11"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="11"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="11"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion11"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult11"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_false"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl12"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="12"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="12"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion12"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult12"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl13"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="13"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="13"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion13"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult13"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_question"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl14"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="14"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="14"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion14"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult14"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_question"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl15"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="15"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="15"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion15"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult15"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl16"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="16"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="16"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion16"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult16"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl17"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="17"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="17"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion17"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult17"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_false"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl18"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="18"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="18"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion18"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult18"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl19"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="19"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="19"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion19"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult19"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl20"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="20"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="20"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion20"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult20"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_false"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl21"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="21"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="21"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion21"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult21"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl22"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="22"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="22"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion22"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult22"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl23"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="23"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="23"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion23"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult23"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_false"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl24"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="24"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="24"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion24"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult24"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl25"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="25"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="25"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion25"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult25"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl26"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="26"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="26"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion26"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult26"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl27"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="27"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="27"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion27"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult27"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl28"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="28"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="28"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion28"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult28"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl29"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="29"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="29"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion29"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult29"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl30"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="30"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="30"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion30"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult30"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl31"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="31"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="31"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion31"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult31"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl32"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="32"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="32"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion32"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult32"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl33"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="33"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="33"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion33"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult33"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl34"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="34"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="34"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion34"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult34"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl35"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="35"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="35"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion35"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult35"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl36"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="36"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="36"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion36"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult36"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl37"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="37"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="37"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion37"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult37"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl38"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="38"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="38"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion38"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult38"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl39"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="39"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="39"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion39"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult39"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl40"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="40"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="40"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion40"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult40"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl41"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="41"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="41"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion41"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult41"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl42"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="42"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="42"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion42"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult42"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl43"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="43"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="43"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion43"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult43"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_question"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl44"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="44"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="44"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion44"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult44"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl45"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="45"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="45"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion45"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult45"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl46"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="46"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="46"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion46"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult46"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl47"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="47"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="47"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion47"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult47"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl48"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="48"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="48"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion48"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult48"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 
         </FrameLayout>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="left"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl49"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="49"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="49"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion49"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult49"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
+
             <FrameLayout
-                android:layout_margin="8dp"
-                android:layout_gravity="right"
-                android:background="@drawable/bgr_button_logout"
+                android:id="@+id/fl50"
                 android:layout_width="180dp"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:background="@drawable/bgr_button_logout">
+
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:textSize="24dp"
-                    android:layout_gravity="left|center_vertical"
-                    android:text="50"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="50"
+                    android:textSize="24dp" />
+
                 <TextView
                     android:id="@+id/tvQuestion50"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    android:background="@drawable/bgr_list_question_did"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="B"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/bgr_list_question_did"
+
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imgResult50"
-                    android:layout_marginRight="16dp"
-                    android:layout_gravity="right|center_vertical"
-                    app:srcCompat="@drawable/ic_true"
                     android:layout_width="32dp"
-                    android:layout_height="32dp"/>
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16dp" />
 
             </FrameLayout>
 

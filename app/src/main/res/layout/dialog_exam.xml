@@ -33,13 +33,14 @@
                 android:text="@string/school"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
             <TextView
                 android:id="@+id/tvNameSchoolDialog"
-                android:layout_marginLeft="4dp"
-                android:layout_gravity="bottom"
-                android:text="THPT Lê Văn Thịnh"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="16dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="4dp"
+                android:text="THPT Lê Văn Thịnhfcgvbhjnfccfgcfcgchgchgchchc" />
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="4dp"

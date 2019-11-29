@@ -17,15 +17,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <provider android:authorities="com.facebook.app.FacebookContentProvider550228805548591"
-            android:name="com.facebook.FacebookContentProvider"
-            android:exported="true"/>
         <activity
             android:theme="@style/NoActionbar"
-            android:name=".activity.TrueScoreActivity">
+            android:name=".activity.ShowQuestionAndAnswerActivity"></activity>
 
-        </activity>
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider550228805548591"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.TrueScoreActivity"
+            android:theme="@style/NoActionbar"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -34,26 +37,27 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-
         <meta-data
-            tools:replace="android:value"
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id"/>
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
 
-        <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
-        <activity android:name="com.facebook.CustomTabActivity"
+        <activity
+            android:name="com.facebook.CustomTabActivity"
             android:exported="true">
-            <intent-filter> <action
-                android:name="android.intent.action.VIEW" />
-                <category
-                    android:name="android.intent.category.DEFAULT" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -61,15 +65,15 @@
 
         <activity
             android:name=".activity.MapsActivity"
-            android:theme="@style/NoActionbar"></activity>
+            android:theme="@style/NoActionbar" />
         <activity
             android:name=".activity.ListQuestionDidActivity"
-            android:theme="@style/NoActionbar" />
+            android:theme="@style/NoActionbar"></activity>
         <activity
             android:name=".activity.ResultActivity"
             android:theme="@style/NoActionbar" />
         <activity
-            android:name=".activity.DoExemActivity"
+            android:name=".activity.DoExamActivity"
             android:theme="@style/NoActionbar" />
         <activity
             android:name=".activity.ReadNewsActivity"
@@ -77,15 +81,13 @@
         <activity
             android:name=".activity.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/NoActionbar">
-
-        </activity>
+            android:theme="@style/NoActionbar"></activity>
         <activity
             android:name=".activity.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.SplashActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

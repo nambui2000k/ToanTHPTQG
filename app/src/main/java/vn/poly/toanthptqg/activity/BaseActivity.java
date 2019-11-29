@@ -34,6 +34,15 @@ public class BaseActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void sendDataByBundle(Class target,String tag1,int stringData1,String tag2,String stringData2){
+        Intent intent = new Intent(this,target);
+        Bundle bundle = new Bundle();
+        bundle.putInt(tag1, stringData1);
+        bundle.putString(tag2, stringData2);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
+
     public void getDataFromBundle(){
         Bundle bundle = getIntent().getExtras();
         String title = bundle.getString("key_1");

@@ -3,10 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.DoExamActivity">
-
+    android:layout_height="match_parent"
+    tools:context=".activity.ShowQuestionAndAnswerActivity">
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -16,21 +15,21 @@
         android:paddingRight="16dp">
 
         <TextView
-            android:id="@+id/tvTime"
+            android:id="@+id/tvAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="18:08"
+            android:text="Đáp án đúng là : A"
             android:textColor="@color/colorWhite"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvFinish"
+            android:id="@+id/tvExit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
-            android:text="@string/finish"
+            android:text="@string/exit"
             android:textColor="@color/colorWhite"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -112,11 +111,7 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imgPrev"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                app:srcCompat="@drawable/ic_prev" />
+
 
             <TextView
                 android:id="@+id/tvPositionSentence"
@@ -130,12 +125,6 @@
                 android:textColor="@color/colorWhite"
                 android:textSize="24sp" />
 
-            <ImageView
-                android:id="@+id/imgNext"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="right"
-                app:srcCompat="@drawable/ic_next" />
         </FrameLayout>
     </FrameLayout>
 

@@ -25,7 +25,6 @@
                     android:id="@+id/tvNameExam"
                     android:textColor="@color/colorBlack"
                     android:textSize="24sp"
-                    android:text="De khao sat chat luong dau nam"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"/>
             </LinearLayout>
@@ -41,7 +40,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_gravity="bottom"
                     android:textSize="14dp"
-                    android:text=": THPT Le Van Thinh"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -59,7 +57,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_gravity="bottom"
                     android:textSize="14dp"
-                    android:text=": 2019-2020"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -76,7 +73,6 @@
                     android:id="@+id/tvStatus"
                     android:layout_marginLeft="4dp"
                     android:textColor="@color/colorGreen"
-                    android:text="Đã làm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
