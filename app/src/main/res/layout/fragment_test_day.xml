@@ -128,7 +128,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Học... học để là chính mình, và học để từ bỏ với vẻ thanh cao những gì không phải là mình."
                 android:textColor="@color/colorWhite"
                 android:textSize="24sp" />
 
@@ -138,7 +137,6 @@
                 android:layout_gravity="right"
                 android:textColor="@color/colorWhite"
                 android:textSize="20sp"
-                android:text="(Henri Frederic Amiel)"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 

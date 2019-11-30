@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -28,8 +27,6 @@ import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -45,8 +42,7 @@ import java.util.Date;
 import java.util.List;
 
 import vn.poly.toanthptqg.R;
-import vn.poly.toanthptqg.activity.BaseFragment;
-import vn.poly.toanthptqg.activity.HomeActivity;
+import vn.poly.toanthptqg.base.BaseFragment;
 import vn.poly.toanthptqg.activity.LoginActivity;
 import vn.poly.toanthptqg.model.Sentence;
 
@@ -171,7 +167,8 @@ public class TestDayFragment extends BaseFragment {
                 logOut();
                 break;
             case R.id.exit:
-                Toast.makeText(getActivity(), "Exit Test Day", Toast.LENGTH_LONG).show();
+                getActivity().moveTaskToBack(true);
+                getActivity().finish();
                 break;
             default:
                 break;

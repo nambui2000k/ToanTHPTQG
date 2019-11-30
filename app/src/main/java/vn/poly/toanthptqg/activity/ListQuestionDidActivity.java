@@ -3,10 +3,8 @@ package vn.poly.toanthptqg.activity;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -21,6 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import vn.poly.toanthptqg.R;
+import vn.poly.toanthptqg.base.BaseActivity;
 import vn.poly.toanthptqg.model.Exam;
 import vn.poly.toanthptqg.model.ExamDid;
 

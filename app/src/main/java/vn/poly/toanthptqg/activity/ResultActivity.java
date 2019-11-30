@@ -2,7 +2,6 @@ package vn.poly.toanthptqg.activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -28,6 +27,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import vn.poly.toanthptqg.R;
+import vn.poly.toanthptqg.base.BaseActivity;
 import vn.poly.toanthptqg.model.Exam;
 import vn.poly.toanthptqg.model.ExamDid;
 

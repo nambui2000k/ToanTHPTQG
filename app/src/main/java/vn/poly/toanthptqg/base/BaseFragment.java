@@ -1,4 +1,4 @@
-package vn.poly.toanthptqg.activity;
+package vn.poly.toanthptqg.base;
 
 import android.view.LayoutInflater;
 import android.view.View;

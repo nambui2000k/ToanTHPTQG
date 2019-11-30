@@ -33,7 +33,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="4dp"
-                android:text="Đại học Bách khoa Hà Nội"
                 android:textColor="@color/colorBlack"
                 android:textSize="16sp" />
 
@@ -51,8 +50,7 @@
                     android:id="@+id/tvIdUniversity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
-                    android:text="BKA" />
+                    android:layout_marginLeft="4dp" />
             </LinearLayout>
         </LinearLayout>
 

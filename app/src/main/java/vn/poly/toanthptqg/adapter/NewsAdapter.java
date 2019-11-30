@@ -18,6 +18,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import vn.poly.toanthptqg.R;
 import vn.poly.toanthptqg.activity.ReadNewsActivity;
@@ -45,17 +46,10 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsHolder> {
     public void onBindViewHolder(@NonNull NewsHolder holder, int position) {
         final News news=newsList.get(position);
         String description=news.getDescription().substring(news.getDescription().indexOf("</br>")+5,news.getDescription().length());
-
-        DateFormat df = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss Z");
-        try {
-            Date date = df.parse(news.getTime());
-            DateFormat df1 = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy ");
-            String dateString = df1.format(date);
-            holder.tvTimeNews.setText(dateString);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
+        Date date = new Date(news.getTime());
+        DateFormat df = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
+        String dateString = df.format(date);
+        holder.tvTimeNews.setText(dateString);
 
 
         Picasso.with(context).load(news.getImage()).into(holder.imgNews);

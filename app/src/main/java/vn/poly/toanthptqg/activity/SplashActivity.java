@@ -1,10 +1,9 @@
 package vn.poly.toanthptqg.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 import vn.poly.toanthptqg.R;
+import vn.poly.toanthptqg.base.BaseActivity;
 
 public class SplashActivity extends BaseActivity {
 

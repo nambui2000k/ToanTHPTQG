@@ -22,7 +22,7 @@
 
             <FrameLayout
                 android:id="@+id/fl1"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -58,7 +58,7 @@
 
             <FrameLayout
                 android:id="@+id/fl2"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -100,7 +100,7 @@
 
             <FrameLayout
                 android:id="@+id/fl3"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -136,7 +136,7 @@
 
             <FrameLayout
                 android:id="@+id/fl4"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -178,7 +178,7 @@
 
             <FrameLayout
                 android:id="@+id/fl5"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -214,7 +214,7 @@
 
             <FrameLayout
                 android:id="@+id/fl6"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -256,7 +256,7 @@
 
             <FrameLayout
                 android:id="@+id/fl7"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -292,7 +292,7 @@
 
             <FrameLayout
                 android:id="@+id/fl8"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -334,7 +334,7 @@
 
             <FrameLayout
                 android:id="@+id/fl9"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -370,7 +370,7 @@
 
             <FrameLayout
                 android:id="@+id/fl10"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -412,7 +412,7 @@
 
             <FrameLayout
                 android:id="@+id/fl11"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -448,7 +448,7 @@
 
             <FrameLayout
                 android:id="@+id/fl12"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -490,7 +490,7 @@
 
             <FrameLayout
                 android:id="@+id/fl13"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -526,7 +526,7 @@
 
             <FrameLayout
                 android:id="@+id/fl14"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -568,7 +568,7 @@
 
             <FrameLayout
                 android:id="@+id/fl15"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -604,7 +604,7 @@
 
             <FrameLayout
                 android:id="@+id/fl16"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -646,7 +646,7 @@
 
             <FrameLayout
                 android:id="@+id/fl17"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -682,7 +682,7 @@
 
             <FrameLayout
                 android:id="@+id/fl18"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -724,7 +724,7 @@
 
             <FrameLayout
                 android:id="@+id/fl19"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -760,7 +760,7 @@
 
             <FrameLayout
                 android:id="@+id/fl20"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -802,7 +802,7 @@
 
             <FrameLayout
                 android:id="@+id/fl21"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -838,7 +838,7 @@
 
             <FrameLayout
                 android:id="@+id/fl22"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -880,7 +880,7 @@
 
             <FrameLayout
                 android:id="@+id/fl23"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -916,7 +916,7 @@
 
             <FrameLayout
                 android:id="@+id/fl24"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -958,7 +958,7 @@
 
             <FrameLayout
                 android:id="@+id/fl25"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -994,7 +994,7 @@
 
             <FrameLayout
                 android:id="@+id/fl26"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1036,7 +1036,7 @@
 
             <FrameLayout
                 android:id="@+id/fl27"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1072,7 +1072,7 @@
 
             <FrameLayout
                 android:id="@+id/fl28"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1114,7 +1114,7 @@
 
             <FrameLayout
                 android:id="@+id/fl29"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1150,7 +1150,7 @@
 
             <FrameLayout
                 android:id="@+id/fl30"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1192,7 +1192,7 @@
 
             <FrameLayout
                 android:id="@+id/fl31"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1228,7 +1228,7 @@
 
             <FrameLayout
                 android:id="@+id/fl32"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1270,7 +1270,7 @@
 
             <FrameLayout
                 android:id="@+id/fl33"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1306,7 +1306,7 @@
 
             <FrameLayout
                 android:id="@+id/fl34"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1348,7 +1348,7 @@
 
             <FrameLayout
                 android:id="@+id/fl35"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1384,7 +1384,7 @@
 
             <FrameLayout
                 android:id="@+id/fl36"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1426,7 +1426,7 @@
 
             <FrameLayout
                 android:id="@+id/fl37"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1462,7 +1462,7 @@
 
             <FrameLayout
                 android:id="@+id/fl38"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1504,7 +1504,7 @@
 
             <FrameLayout
                 android:id="@+id/fl39"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1540,7 +1540,7 @@
 
             <FrameLayout
                 android:id="@+id/fl40"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1582,7 +1582,7 @@
 
             <FrameLayout
                 android:id="@+id/fl41"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1618,7 +1618,7 @@
 
             <FrameLayout
                 android:id="@+id/fl42"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1660,7 +1660,7 @@
 
             <FrameLayout
                 android:id="@+id/fl43"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1696,7 +1696,7 @@
 
             <FrameLayout
                 android:id="@+id/fl44"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1738,7 +1738,7 @@
 
             <FrameLayout
                 android:id="@+id/fl45"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1774,7 +1774,7 @@
 
             <FrameLayout
                 android:id="@+id/fl46"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1816,7 +1816,7 @@
 
             <FrameLayout
                 android:id="@+id/fl47"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1852,7 +1852,7 @@
 
             <FrameLayout
                 android:id="@+id/fl48"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"
@@ -1894,7 +1894,7 @@
 
             <FrameLayout
                 android:id="@+id/fl49"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:layout_margin="8dp"
@@ -1930,7 +1930,7 @@
 
             <FrameLayout
                 android:id="@+id/fl50"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:layout_margin="8dp"

@@ -2,18 +2,14 @@ package vn.poly.toanthptqg.activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -26,6 +22,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import vn.poly.toanthptqg.R;
+import vn.poly.toanthptqg.base.BaseActivity;
 import vn.poly.toanthptqg.model.Exam;
 import vn.poly.toanthptqg.model.ExamDid;
 

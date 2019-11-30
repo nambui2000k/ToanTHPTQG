@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -38,7 +37,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import vn.poly.toanthptqg.R;
-import vn.poly.toanthptqg.activity.BaseFragment;
+import vn.poly.toanthptqg.base.BaseFragment;
 import vn.poly.toanthptqg.activity.LoginActivity;
 import vn.poly.toanthptqg.adapter.UniversityAdapter;
 import vn.poly.toanthptqg.model.University;
@@ -152,7 +151,8 @@ public class SchoolFragment extends BaseFragment {
                 logOut();
                 break;
             case R.id.exit:
-                Toast.makeText(getActivity(), "Exit School", Toast.LENGTH_LONG).show();
+                getActivity().moveTaskToBack(true);
+                getActivity().finish();
                 break;
             default:
                 break;

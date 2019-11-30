@@ -19,7 +19,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Đáp án đúng là : A"
             android:textColor="@color/colorWhite"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -50,7 +49,7 @@
                 android:id="@+id/imgQuestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/de0001_cau1" />
+                 />
 
             <RadioGroup
 
@@ -121,7 +120,6 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
                 android:gravity="center"
-                android:text="Câu 1"
                 android:textColor="@color/colorWhite"
                 android:textSize="24sp" />
 
