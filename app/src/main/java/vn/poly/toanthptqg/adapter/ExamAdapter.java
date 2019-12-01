@@ -3,7 +3,6 @@ package vn.poly.toanthptqg.adapter;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,12 +26,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import vn.poly.toanthptqg.R;
-import vn.poly.toanthptqg.activity.DataBaseExamDid;
-import vn.poly.toanthptqg.activity.DoExamActivity;
-import vn.poly.toanthptqg.activity.ListQuestionDidActivity;
+import vn.poly.toanthptqg.data.database.DataBaseExamDid;
+import vn.poly.toanthptqg.ui.doexam.activity.DoExamActivity;
+import vn.poly.toanthptqg.ui.doexam.listquestiondid.ListQuestionDidActivity;
 import vn.poly.toanthptqg.adapter.holder.ExamHolder;
-import vn.poly.toanthptqg.model.Exam;
-import vn.poly.toanthptqg.model.ExamDid;
+import vn.poly.toanthptqg.data.model.Exam;
+import vn.poly.toanthptqg.data.model.ExamDid;
 
 public class ExamAdapter extends RecyclerView.Adapter<ExamHolder> {
     private Context context;

@@ -6,7 +6,7 @@
     android:background="@color/colorPrimary"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".activity.SplashActivity">
+    tools:context=".ui.splash.SplashActivity">
     <ImageView
         android:layout_margin="80dp"
         app:srcCompat="@drawable/ic_logo"

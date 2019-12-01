@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,10 +16,10 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import vn.poly.toanthptqg.R;
-import vn.poly.toanthptqg.activity.MapsActivity;
-import vn.poly.toanthptqg.activity.TrueScoreActivity;
+import vn.poly.toanthptqg.ui.school.location.MapsActivity;
+import vn.poly.toanthptqg.ui.school.truescore.TrueScoreActivity;
 import vn.poly.toanthptqg.adapter.holder.UniversityHolder;
-import vn.poly.toanthptqg.model.University;
+import vn.poly.toanthptqg.data.model.University;
 
 public class UniversityAdapter extends RecyclerView.Adapter<UniversityHolder> {
     private Context context;

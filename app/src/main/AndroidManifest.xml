@@ -19,7 +19,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:theme="@style/NoActionbar"
-            android:name=".activity.ShowQuestionAndAnswerActivity"></activity>
+            android:name=".ui.doexam.showquestiondid.ShowQuestionAndAnswerActivity"></activity>
 
         <provider
             android:name="com.facebook.FacebookContentProvider"
@@ -27,7 +27,7 @@
             android:exported="true" />
 
         <activity
-            android:name=".activity.TrueScoreActivity"
+            android:name=".ui.school.truescore.TrueScoreActivity"
             android:theme="@style/NoActionbar"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -64,29 +64,29 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".activity.MapsActivity"
+            android:name=".ui.school.location.MapsActivity"
             android:theme="@style/NoActionbar" />
         <activity
-            android:name=".activity.ListQuestionDidActivity"
+            android:name=".ui.doexam.listquestiondid.ListQuestionDidActivity"
             android:theme="@style/NoActionbar"></activity>
         <activity
-            android:name=".activity.ResultActivity"
+            android:name=".ui.doexam.result.ResultActivity"
             android:theme="@style/NoActionbar" />
         <activity
-            android:name=".activity.DoExamActivity"
+            android:name=".ui.doexam.activity.DoExamActivity"
             android:theme="@style/NoActionbar" />
         <activity
-            android:name=".activity.ReadNewsActivity"
+            android:name=".ui.news.readnews.ReadNewsActivity"
             android:theme="@style/NoActionbar" />
         <activity
-            android:name=".activity.HomeActivity"
+            android:name=".ui.home.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/NoActionbar"></activity>
         <activity
-            android:name=".activity.LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.SplashActivity"
+            android:name=".ui.splash.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

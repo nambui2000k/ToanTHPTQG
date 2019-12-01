@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context=".activity.ResultActivity">
+    tools:context=".ui.doexam.result.ResultActivity">
     <LinearLayout
         android:paddingTop="16dp"
         android:background="@drawable/bgr_result_activity"

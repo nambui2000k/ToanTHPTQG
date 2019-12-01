@@ -3,7 +3,6 @@ package vn.poly.toanthptqg.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,16 +13,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import vn.poly.toanthptqg.R;
-import vn.poly.toanthptqg.activity.ReadNewsActivity;
+import vn.poly.toanthptqg.ui.news.readnews.ReadNewsActivity;
 import vn.poly.toanthptqg.adapter.holder.NewsHolder;
-import vn.poly.toanthptqg.model.News;
+import vn.poly.toanthptqg.data.model.News;
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsHolder> {
     private Context context;
