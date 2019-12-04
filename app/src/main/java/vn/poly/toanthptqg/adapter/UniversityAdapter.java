@@ -1,5 +1,6 @@
 package vn.poly.toanthptqg.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -35,6 +37,7 @@ public class UniversityAdapter extends RecyclerView.Adapter<UniversityHolder> {
     public UniversityHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(context).inflate(R.layout.row_list_university,parent,false);
         UniversityHolder universityHolder=new UniversityHolder(view);
+
         return universityHolder;
 
     }
@@ -42,6 +45,11 @@ public class UniversityAdapter extends RecyclerView.Adapter<UniversityHolder> {
     @Override
     public void onBindViewHolder(@NonNull UniversityHolder holder, int position) {
         final University university=universityList.get(position);
+//        holder.itemView.setAnimation(AnimationUtils.loadAnimation(context,R.anim.anim_recycler_view));
+        holder.logoUniversity.setAnimation(AnimationUtils.loadAnimation(context,R.anim.anim_image_recyclerview));
+        holder.lnlButtomRow.setAnimation(AnimationUtils.loadAnimation(context,R.anim.anim_container_recyclerview));
+        holder.lnlButton.setAnimation(AnimationUtils.loadAnimation(context,R.anim.anim_container_recyclerview));
+        holder.lnlContent.setAnimation(AnimationUtils.loadAnimation(context,R.anim.anim_container_recyclerview));
         holder.tvIdUniversity.setText(university.getIdUniversity());
         holder.tvNameUniversity.setText(university.getNameUniversity());
         holder.tvIdUniversity.setText(university.getIdUniversity());
@@ -62,7 +70,10 @@ public class UniversityAdapter extends RecyclerView.Adapter<UniversityHolder> {
                 bundle.putFloat("longitude", university.getLongitude());
                 bundle.putString("nameUniversity", university.getNameUniversity());
                 intent.putExtras(bundle);
-                context.startActivity(intent);
+                 context.startActivity(intent);
+                ((Activity)context).overridePendingTransition(R.anim.anim_enter_list_school_activity,R.anim.anim_exit_list_school_activity);
+
+
             }
         });
         holder.imgScore.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +85,7 @@ public class UniversityAdapter extends RecyclerView.Adapter<UniversityHolder> {
                 bundle.putString("nameUniversity", university.getNameUniversity());
                 intent.putExtras(bundle);
                 context.startActivity(intent);
+
             }
         });
 

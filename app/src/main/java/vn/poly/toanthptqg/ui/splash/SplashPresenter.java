@@ -27,4 +27,6 @@ public class SplashPresenter implements SplashContract.Presenter {
         thread.start();
 
     }
+
+
 }

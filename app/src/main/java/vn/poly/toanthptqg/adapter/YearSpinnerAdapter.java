@@ -5,6 +5,7 @@ import android.database.DataSetObserver;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
@@ -26,7 +27,7 @@ public class YearSpinnerAdapter implements SpinnerAdapter {
         view= LayoutInflater.from(context).inflate(R.layout.spinner_year,viewGroup,false);
         TextView tv_year_spinner=view.findViewById(R.id.tv_year_spinner);
         tv_year_spinner.setText(listYear.get(i));
-
+        view.setAnimation(AnimationUtils.loadAnimation(context,R.anim.anim_container_recyclerview));
         return view;
     }
 
@@ -65,7 +66,6 @@ public class YearSpinnerAdapter implements SpinnerAdapter {
         view= LayoutInflater.from(context).inflate(R.layout.spinner_year,viewGroup,false);
         TextView tv_year_spinner=view.findViewById(R.id.tv_year_spinner);
         tv_year_spinner.setText(listYear.get(i));
-
         return view;
     }
 

@@ -74,9 +74,16 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     @Override
     public boolean onSupportNavigateUp() {
+
         onBackPressed();
         return true;
+
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.anim_exit_map_activity,R.anim.anim_enter_map_activity);
 
+    }
 }

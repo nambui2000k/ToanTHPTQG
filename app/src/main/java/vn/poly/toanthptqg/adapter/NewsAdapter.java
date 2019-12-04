@@ -1,11 +1,13 @@
 package vn.poly.toanthptqg.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -42,6 +44,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsHolder> {
     @Override
     public void onBindViewHolder(@NonNull NewsHolder holder, int position) {
         final News news=newsList.get(position);
+        holder.lnlImageNews.setAnimation(AnimationUtils.loadAnimation(context,R.anim.anim_image_recyclerview));
+        holder.lnlContentNews.setAnimation(AnimationUtils.loadAnimation(context,R.anim.anim_container_recyclerview));
+
         String description=news.getDescription().substring(news.getDescription().indexOf("</br>")+5,news.getDescription().length());
         Date date = new Date(news.getTime());
         DateFormat df = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
@@ -62,6 +67,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsHolder> {
                 bundle.putString("title",news.getTitle());
                 intent.putExtras(bundle);
                 context.startActivity(intent);
+                ((Activity)context).overridePendingTransition(R.anim.anim_enter_list_school_activity,R.anim.anim_exit_list_school_activity);
+
+
             }
         });
 

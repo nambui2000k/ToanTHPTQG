@@ -59,6 +59,12 @@ public class ReadNewsActivity extends AppCompatActivity implements ReadNewsContr
         onBackPressed();
         return true;
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.anim_exit_map_activity,R.anim.anim_enter_map_activity);
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

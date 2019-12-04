@@ -1,12 +1,16 @@
 package vn.poly.toanthptqg.adapter;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -73,19 +77,19 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamHolder> {
     public ExamHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.row_exam, parent, false);
         ExamHolder examHolder = new ExamHolder(view);
+
         return examHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ExamHolder holder, int position) {
-
+        holder.itemView.setAnimation(AnimationUtils.loadAnimation(context,R.anim.anim_container_recyclerview));
         final Exam exam = examList.get(position);
         holder.tvNameExam.setText(exam.getNameExam());
         holder.tvNameSchool.setText(exam.getNameSchool());
         dataBaseExamDid = new DataBaseExamDid(context);
         examDidList = new ArrayList<>();
         examDidList = dataBaseExamDid.getAllexamDid();
-
         if (checkHaveExamDid(exam.getIdExam()) > 0) {
             holder.tvStatus.setText(R.string.done);
             holder.tvStatus.setTextColor(context.getResources().getColor(R.color.colorGreen));
@@ -107,6 +111,9 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamHolder> {
                 View view1 = LayoutInflater.from(context).inflate(R.layout.dialog_exam, null);
                 builder.setView(view1);
                 alertDialog = builder.show();
+                builder.create();
+
+
                 initDialog();
                 if(dataBaseExamDid.getAllExamDidByIdExam(exam.getIdExam()).size()>0){
                     examDid=dataBaseExamDid.getAllExamDidByIdExam(exam.getIdExam()).get(0);
@@ -153,6 +160,8 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamHolder> {
                         Intent intent = new Intent(context, DoExamActivity.class);
                         intent.putExtra("idExam",exam.getIdExam());
                         context.startActivity(intent);
+                        ((Activity)context).overridePendingTransition(R.anim.anim_enter_list_school_activity,R.anim.anim_exit_list_school_activity);
+
 
                     }
                 });
@@ -163,11 +172,14 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamHolder> {
                         Intent intent = new Intent(context, DoExamActivity.class);
                         intent.putExtra("idExam",exam.getIdExam());
                         context.startActivity(intent);
+                        ((Activity)context).overridePendingTransition(R.anim.anim_enter_do_exam_activity,R.anim.anim_exit_do_exam_activity);
+
                     }
                 });
 
 
-                builder.create();
+
+
             }
         });
 
@@ -322,6 +334,5 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamHolder> {
             }
         });
     }
-
 
 }

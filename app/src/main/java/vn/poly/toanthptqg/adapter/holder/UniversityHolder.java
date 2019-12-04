@@ -2,6 +2,7 @@ package vn.poly.toanthptqg.adapter.holder;
 
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,10 @@ public class UniversityHolder extends RecyclerView.ViewHolder {
      public CircleImageView logoUniversity;
      public ImageView imgLocation;
      public ImageView imgScore;
+    public LinearLayout lnlContent;
+    public LinearLayout lnlButton;
+    public LinearLayout lnlButtomRow;
+
 
 
 
@@ -26,5 +31,9 @@ public class UniversityHolder extends RecyclerView.ViewHolder {
         logoUniversity=itemView.findViewById(R.id.logoUniversity);
         imgLocation = (ImageView) itemView.findViewById(R.id.imgLocation);
         imgScore = (ImageView) itemView.findViewById(R.id.imgScore);
+        lnlContent = (LinearLayout) itemView.findViewById(R.id.lnlContent);
+        lnlButton = (LinearLayout) itemView.findViewById(R.id.lnlButton);
+        lnlButtomRow = (LinearLayout) itemView.findViewById(R.id.lnlButtomRow);
+
     }
 }

@@ -1,8 +1,11 @@
 package vn.poly.toanthptqg.ui.doexam.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -76,6 +79,7 @@ public class DoExamActivity extends BaseActivity implements DoExamContract.View 
                 confirmChange(position);
                 position++;
                 load();
+                imgQuestion.setAnimation(AnimationUtils.loadAnimation(DoExamActivity.this,R.anim.anim_question_left_to_right));
             }
         });
         imgPrev.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +89,7 @@ public class DoExamActivity extends BaseActivity implements DoExamContract.View 
                 confirmChange(position);
                 position--;
                 load();
-
+                imgQuestion.setAnimation(AnimationUtils.loadAnimation(DoExamActivity.this,R.anim.anim_question_right_to_left));
             }
         });
 
@@ -345,6 +349,8 @@ public class DoExamActivity extends BaseActivity implements DoExamContract.View 
         }
 
         openActivitySendData(ResultActivity.class, "idExam", idExam);
+        overridePendingTransition(R.anim.anim_enter_do_exam_activity,R.anim.anim_exit_do_exam_activity);
+
 
 
     }
@@ -372,6 +378,7 @@ public class DoExamActivity extends BaseActivity implements DoExamContract.View 
         idExam = getIntent().getStringExtra("idExam");
         dataBaseExamDid = new DataBaseExamDid(DoExamActivity.this);
         listAnswer = new String[50];
+
     }
 
     public void setValueDefaulAnswer() {
@@ -431,6 +438,7 @@ public class DoExamActivity extends BaseActivity implements DoExamContract.View 
         mData.child("Exam").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
                 load();
             }
 

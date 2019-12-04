@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -204,6 +205,7 @@ public class ListQuestionDidActivity extends BaseActivity implements ListQuestio
             @Override
             public void onClick(View view) {
                 sendDataByBundle(ShowQuestionAndAnswerActivity.class,"position",1,"idExam",idExam);
+
             }
         });
         fl2.setOnClickListener(new View.OnClickListener() {
@@ -827,5 +829,18 @@ public class ListQuestionDidActivity extends BaseActivity implements ListQuestio
 
 
 
+    }
+    public void sendDataByBundle(Class target,String tag1,int stringData1,String tag2,String stringData2){
+        Intent intent = new Intent(this,target);
+        Bundle bundle = new Bundle();
+        bundle.putInt(tag1, stringData1);
+        bundle.putString(tag2, stringData2);
+        intent.putExtras(bundle);
+        startActivity(intent);
+        if(stringData1%2!=0){
+            overridePendingTransition(R.anim.anim_question_left_to_right,R.anim.anim_exit_do_exam_activity);
+        } else {
+            overridePendingTransition(R.anim.anim_question_right_to_left,R.anim.anim_exit_do_exam_activity);
+        }
     }
 }

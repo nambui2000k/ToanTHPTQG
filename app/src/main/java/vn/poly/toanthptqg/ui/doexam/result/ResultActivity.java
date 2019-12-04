@@ -66,12 +66,14 @@ public class ResultActivity extends BaseActivity implements ResultContract.View 
             @Override
             public void onClick(View view) {
                 openActivitySendData(ListQuestionDidActivity.class,"idExam",idExam);
+
             }
         });
         imgCloseResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openActivitySendData(HomeActivity.class,"positionSelectNav",1);
+
             }
         });
 
@@ -106,6 +108,13 @@ public class ResultActivity extends BaseActivity implements ResultContract.View 
         dataBaseExamDid=new DataBaseExamDid(ResultActivity.this);
         examDid=dataBaseExamDid.getAllExamDidByIdExam(idExam).get(0);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        openActivitySendData(HomeActivity.class,"positionSelectNav",1);
+    }
+
     public void setText(){
         tvNameExamResult.setText(exam.getNameExam());
         tvNameSchoolResult.setText(exam.getNameSchool());

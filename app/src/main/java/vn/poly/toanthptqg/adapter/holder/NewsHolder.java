@@ -2,6 +2,7 @@ package vn.poly.toanthptqg.adapter.holder;
 
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,10 @@ public class NewsHolder extends RecyclerView.ViewHolder {
     public TextView tvTimeNews;
     public TextView tvTitleNews;
     public TextView tvDescriptionNews;
+    public LinearLayout lnlImageNews;
+    public LinearLayout lnlContentNews;
+
+
 
 
 
@@ -23,5 +28,7 @@ public class NewsHolder extends RecyclerView.ViewHolder {
         tvTimeNews = (TextView) itemView.findViewById(R.id.tvTimeNews);
         tvTitleNews = (TextView) itemView.findViewById(R.id.tvTitleNews);
         tvDescriptionNews = (TextView) itemView.findViewById(R.id.tvDescriptionNews);
+        lnlImageNews = (LinearLayout) itemView.findViewById(R.id.lnlImageNews);
+        lnlContentNews = (LinearLayout) itemView.findViewById(R.id.lnlContentNews);
     }
 }

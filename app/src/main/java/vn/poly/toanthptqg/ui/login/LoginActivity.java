@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -35,6 +37,10 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
     private CallbackManager mCallbackManager;
     private FirebaseAuth mAuth;
     private DataBaseExamDid dataBaseExamDid;
+    private Animation anim_logo_login;
+    private Animation anim_logo_with_gmail;
+    private Animation anim_logo_with_facebook;
+    private LinearLayout lnlLogo;
 
 
 
@@ -67,8 +73,18 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
 
 
     private void initActivity(){
+        anim_logo_login= AnimationUtils.loadAnimation(this,R.anim.anim_logo_login);
+        anim_logo_with_gmail= AnimationUtils.loadAnimation(this,R.anim.anim_login_with_gmail);
+        anim_logo_with_facebook= AnimationUtils.loadAnimation(this,R.anim.anim_login_with_facebook);
+
         lnlLoginGoogle = (LinearLayout) findViewById(R.id.lnlLoginGoogle);
         lnlLoginFacebook = (LinearLayout) findViewById(R.id.lnlLoginFacebook);
+        lnlLogo = (LinearLayout) findViewById(R.id.lnlLogo);
+        lnlLogo.startAnimation(anim_logo_login);
+        lnlLoginGoogle.startAnimation(anim_logo_with_gmail);
+        lnlLoginFacebook.startAnimation(anim_logo_with_facebook);
+
+
     }
 
     @Override

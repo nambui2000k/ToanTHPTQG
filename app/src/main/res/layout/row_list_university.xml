@@ -58,6 +58,7 @@
 
     </RelativeLayout>
     <LinearLayout
+        android:id="@+id/lnlButton"
         android:layout_marginRight="8dp"
         android:gravity="right"
         android:layout_toRightOf="@id/lnlContent"
@@ -78,6 +79,8 @@
             android:layout_height="32dp"/>
     </LinearLayout>
     <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lnlButtomRow"
         android:layout_marginLeft="56dp"
         android:layout_gravity="bottom"
         android:background="@drawable/line_bottom_row_university"

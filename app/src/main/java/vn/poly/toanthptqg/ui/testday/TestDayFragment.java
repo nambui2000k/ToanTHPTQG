@@ -12,6 +12,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,6 +71,8 @@ public class TestDayFragment extends BaseFragment implements TestDayContract.Vie
     private DatabaseReference mData;
     private List<AuthUI.IdpConfig> configList;
     private static final int MY_REQUEST_CODE = 567;
+    private Animation animImage;
+    private ImageView imgFramCountDay;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -87,6 +92,7 @@ public class TestDayFragment extends BaseFragment implements TestDayContract.Vie
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 dateTest = dataSnapshot.getValue().toString();
                 loadDate();
+                Log.e("loaddate","loaddate");
             }
 
             @Override
@@ -124,6 +130,7 @@ public class TestDayFragment extends BaseFragment implements TestDayContract.Vie
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 loadSentence();
+                Log.e("loadSentence","loadSentence");
             }
 
             @Override
@@ -149,6 +156,10 @@ public class TestDayFragment extends BaseFragment implements TestDayContract.Vie
         sentenceList = new ArrayList<>();
         mData = FirebaseDatabase.getInstance().getReference();
         presenter=new TestDayPresenter(this,getContext());
+        imgFramCountDay=view.findViewById(R.id.imgFramCountDay);
+        animImage= AnimationUtils.loadAnimation(getContext(),R.anim.anim_image_testday);
+        imgFramCountDay.setAnimation(animImage);
+
     }
 
     @Override

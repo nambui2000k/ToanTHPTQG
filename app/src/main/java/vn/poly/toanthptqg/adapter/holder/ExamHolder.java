@@ -23,4 +23,6 @@ public  class ExamHolder extends RecyclerView.ViewHolder {
         tvYear = (TextView) itemView.findViewById(R.id.tvYear);
         tvStatus = (TextView) itemView.findViewById(R.id.tvStatus);
     }
+
+
 }

@@ -147,6 +147,13 @@ public class TrueScoreActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.anim_exit_map_activity,R.anim.anim_enter_map_activity);
+
+    }
+
     private void loadWebsiteHasSpinner() {
         new Thread(new Runnable() {
             @Override
