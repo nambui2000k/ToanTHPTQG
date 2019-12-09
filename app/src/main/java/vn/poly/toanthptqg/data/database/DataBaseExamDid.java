@@ -95,7 +95,6 @@ public class DataBaseExamDid extends SQLiteOpenHelper {
 
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-//        contentValues.put("MaHDCT", hoaDonChiTiet.getMaHDCT());
         contentValues.put("idExam", examDid.getIdExam());
         contentValues.put("as1", examDid.getAs1());
         contentValues.put("as2", examDid.getAs2());
@@ -213,7 +212,9 @@ public class DataBaseExamDid extends SQLiteOpenHelper {
         contentValues.put("as50", examDid.getAs50());
 
 
-        long result = sqLiteDatabase.update("examDid", contentValues, "idExam" + "=?", new String[]{String.valueOf(examDid.getIdExam())});
+        long result = sqLiteDatabase.update("examDid",
+                contentValues, "idExam" + "=?",
+                new String[]{String.valueOf(examDid.getIdExam())});
         sqLiteDatabase.close();
         return result;
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Luyện thi toán THPT Quốc Gia</string>
+    <string name="app_name">Luyện thi Đại Học môn Toán</string>
     <string name="text_login_google">Sign in with Google</string>
     <string name="text_login_facebook">Sign in with Facebook</string>
     <string name="title_activity_home">HomeActivity</string>

@@ -5,6 +5,7 @@ import android.content.Context;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.firebase.ui.auth.AuthUI;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.List;
@@ -16,6 +17,7 @@ public interface LoginContract {
         void openHomeActivity();
         void showLoginWithGmail();
         void showLoginWithFacebook();
+        void firebaseAuthWithGoogle(GoogleSignInAccount acct);
     }
 
     interface Presenter{
@@ -25,5 +27,6 @@ public interface LoginContract {
         void handleFacebookAccessToken(AccessToken token, FirebaseAuth mAuth);
         void onFacebookLoginClicked(CallbackManager mCallbackManager,FirebaseAuth mAuth);
         void onGmailLoginClicked();
+
     }
 }
