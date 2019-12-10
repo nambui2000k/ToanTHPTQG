@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "167493170054",
+    "firebase_url": "https://luyen-thi-toan-thptabc.firebaseio.com",
+    "project_id": "luyen-thi-toan-thptabc",
+    "storage_bucket": "luyen-thi-toan-thptabc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167493170054:android:28e473dc7726116dab7207",
+        "android_client_info": {
+          "package_name": "vn.poly.toanthptqg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167493170054-42ll9s4bf900aserk92u5hagt3vcu9ps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.poly.toanthptqg",
+            "certificate_hash": "d4be44f67ed1edee6a7f94d9c86320e74281a2e4"
+          }
+        },
+        {
+          "client_id": "167493170054-ujnt7k8l9pj64fsq632ce33idqct6epv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.poly.toanthptqg",
+            "certificate_hash": "6d8aad5d3b5442a793b74b4760dca497862647c0"
+          }
+        },
+        {
+          "client_id": "167493170054-f1pfd5mct1rdvjn42j1i70jje69jlc8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.poly.toanthptqg",
+            "certificate_hash": "088bef7aca51aee327bb71f3e3abd3e014918dc8"
+          }
+        },
+        {
+          "client_id": "167493170054-u23g4fj723b757e75lm233qs6g4ggahg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.poly.toanthptqg",
+            "certificate_hash": "216b92ec7a2dec3eb962548f7836ca0ec236c0d3"
+          }
+        },
+        {
+          "client_id": "167493170054-gt3k5s512hv8r74lf06htho5bkmoo8pf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABccaXd47s2Jw1hoNICu53zzPXYxhFAWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167493170054-gt3k5s512hv8r74lf06htho5bkmoo8pf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
