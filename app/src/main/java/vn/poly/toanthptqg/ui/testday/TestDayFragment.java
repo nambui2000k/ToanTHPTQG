@@ -92,7 +92,6 @@ public class TestDayFragment extends BaseFragment implements TestDayContract.Vie
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 dateTest = dataSnapshot.getValue().toString();
                 loadDate();
-                Log.e("loaddate","loaddate");
             }
 
             @Override
@@ -130,7 +129,6 @@ public class TestDayFragment extends BaseFragment implements TestDayContract.Vie
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 loadSentence();
-                Log.e("loadSentence","loadSentence");
             }
 
             @Override

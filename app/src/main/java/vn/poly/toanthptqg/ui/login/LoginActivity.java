@@ -114,6 +114,9 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         mCallbackManager.onActivityResult(requestCode, resultCode, data);
+        Log.e("requestCode",requestCode+"");
+        Log.e("resultCode",resultCode+"");
+        Log.e("data",data+"");
 
         if (requestCode == RC_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
